@@ -1,3 +1,5 @@
 com.flurry.android
 com.flurry.android.marketing
+com.flurry.android.marketing.messaging
+com.flurry.android.marketing.messaging.notification
 com.flurry.android.nativecrash
