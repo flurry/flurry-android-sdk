@@ -1,3 +1,7 @@
+# Flurry Android Release Notes:
+
+https://developer.yahoo.com/flurry/docs/releasenotes/android/
+
 # Flurry Android SDK Javadoc
 
 This repo is for Flurry Android SDK [Javadoc](https://flurry.github.io/flurry-android-sdk/).
