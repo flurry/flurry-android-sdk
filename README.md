@@ -1,4 +1,4 @@
-# Flurry Android Release Notes:
+# Flurry Android SDK Release Notes:
 
 https://developer.yahoo.com/flurry/docs/releasenotes/android/
 
