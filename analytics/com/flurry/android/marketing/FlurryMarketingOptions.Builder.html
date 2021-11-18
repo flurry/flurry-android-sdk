@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -45,7 +45,7 @@ var activeTableTab = "activeTableTab";
 <li><a href="../../../../index-all.html">Index</a></li>
 <li><a href="../../../../help-doc.html">Help</a></li>
 </ul>
-<div class="aboutLanguage">Flurry Android SDK 13.0.2</div>
+<div class="aboutLanguage">Flurry Android SDK 13.1.0</div>
 </div>
 <div class="subNav">
 <ul class="navList">
@@ -193,6 +193,13 @@ extends java.lang.Object</pre>
 <div class="block">If setting up with autointegration, optionally pass a listener to list notification events.</div>
 </td>
 </tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code><a href="../../../../com/flurry/android/marketing/FlurryMarketingOptions.Builder.html" title="class in com.flurry.android.marketing">FlurryMarketingOptions.Builder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/flurry/android/marketing/FlurryMarketingOptions.Builder.html#withFlurryMessagingListener-com.flurry.android.marketing.messaging.FlurryMessagingListener-android.os.Handler-">withFlurryMessagingListener</a></span>(<a href="../../../../com/flurry/android/marketing/messaging/FlurryMessagingListener.html" title="interface in com.flurry.android.marketing.messaging">FlurryMessagingListener</a>&nbsp;flurryMessagingListener,
+                           android.os.Handler&nbsp;flurryMessagingHandler)</code>
+<div class="block">If setting up with autointegration, optionally pass a listener to list notification events.</div>
+</td>
+</tr>
 </table>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -257,6 +264,25 @@ extends java.lang.Object</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>flurryMessagingListener</code> - optional listener to listen to notification events</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the current builder to chain calls if necessary</dd>
+</dl>
+</li>
+</ul>
+<a name="withFlurryMessagingListener-com.flurry.android.marketing.messaging.FlurryMessagingListener-android.os.Handler-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>withFlurryMessagingListener</h4>
+<pre>public&nbsp;<a href="../../../../com/flurry/android/marketing/FlurryMarketingOptions.Builder.html" title="class in com.flurry.android.marketing">FlurryMarketingOptions.Builder</a>&nbsp;withFlurryMessagingListener(<a href="../../../../com/flurry/android/marketing/messaging/FlurryMessagingListener.html" title="interface in com.flurry.android.marketing.messaging">FlurryMessagingListener</a>&nbsp;flurryMessagingListener,
+                                                                  android.os.Handler&nbsp;flurryMessagingHandler)</pre>
+<div class="block">If setting up with autointegration, optionally pass a listener to list notification events.
+ User specified handler can be assigned to post the notification.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>flurryMessagingListener</code> - optional listener to listen to notification events</dd>
+<dd><code>flurryMessagingHandler</code> - The notification handler</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the current builder to chain calls if necessary</dd>
 </dl>
@@ -350,7 +376,7 @@ extends java.lang.Object</pre>
 <li><a href="../../../../index-all.html">Index</a></li>
 <li><a href="../../../../help-doc.html">Help</a></li>
 </ul>
-<div class="aboutLanguage">Flurry Android SDK 13.0.2</div>
+<div class="aboutLanguage">Flurry Android SDK 13.1.0</div>
 </div>
 <div class="subNav">
 <ul class="navList">
