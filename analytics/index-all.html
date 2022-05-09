@@ -39,7 +39,7 @@
 <li class="navBarCell1Rev">Index</li>
 <li><a href="help-doc.html">Help</a></li>
 </ul>
-<div class="aboutLanguage">Flurry Android SDK 13.2.0</div>
+<div class="aboutLanguage">Flurry Android SDK 13.3.0</div>
 </div>
 <div class="subNav">
 <ul class="navList">
@@ -275,6 +275,8 @@
 <dd>
 <div class="block">Fetch Config will trigger an async call to the server.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/flurry/android/marketing/FlurryMarketingUtils.FirebaseTokenAgent.html#FirebaseTokenAgent--">FirebaseTokenAgent()</a></span> - Constructor for class com.flurry.android.marketing.<a href="com/flurry/android/marketing/FlurryMarketingUtils.FirebaseTokenAgent.html" title="class in com.flurry.android.marketing">FlurryMarketingUtils.FirebaseTokenAgent</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/flurry/android/FlurryAgent.UserProperties.html#flag-java.lang.String-">flag(String)</a></span> - Static method in class com.flurry.android.<a href="com/flurry/android/FlurryAgent.UserProperties.html" title="class in com.flurry.android">FlurryAgent.UserProperties</a></dt>
 <dd>
 <div class="block">Exactly set, or replace if any previously exists, any state for the property to a single true state.</div>
@@ -356,6 +358,20 @@
 <dt><a href="com/flurry/android/marketing/FlurryMarketingOptions.Builder.html" title="class in com.flurry.android.marketing"><span class="typeNameLink">FlurryMarketingOptions.Builder</span></a> - Class in <a href="com/flurry/android/marketing/package-summary.html">com.flurry.android.marketing</a></dt>
 <dd>
 <div class="block">This Builder can be used to setup the options to initialize marketing suite.</div>
+</dd>
+<dt><a href="com/flurry/android/marketing/FlurryMarketingUtils.html" title="class in com.flurry.android.marketing"><span class="typeNameLink">FlurryMarketingUtils</span></a> - Class in <a href="com/flurry/android/marketing/package-summary.html">com.flurry.android.marketing</a></dt>
+<dd>
+<div class="block">The FlurryMarketingUtils provides the helper utilities APIs for using the Flurry Push features.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/flurry/android/marketing/FlurryMarketingUtils.html#FlurryMarketingUtils--">FlurryMarketingUtils()</a></span> - Constructor for class com.flurry.android.marketing.<a href="com/flurry/android/marketing/FlurryMarketingUtils.html" title="class in com.flurry.android.marketing">FlurryMarketingUtils</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="com/flurry/android/marketing/FlurryMarketingUtils.FirebaseTokenAgent.html" title="class in com.flurry.android.marketing"><span class="typeNameLink">FlurryMarketingUtils.FirebaseTokenAgent</span></a> - Class in <a href="com/flurry/android/marketing/package-summary.html">com.flurry.android.marketing</a></dt>
+<dd>
+<div class="block">A Firebase token retrieving helper agent.</div>
+</dd>
+<dt><a href="com/flurry/android/marketing/FlurryMarketingUtils.FirebaseTokenAgent.TokenListener.html" title="interface in com.flurry.android.marketing"><span class="typeNameLink">FlurryMarketingUtils.FirebaseTokenAgent.TokenListener</span></a> - Interface in <a href="com/flurry/android/marketing/package-summary.html">com.flurry.android.marketing</a></dt>
+<dd>
+<div class="block">Listener to receive the token onComplete callback.</div>
 </dd>
 <dt><a href="com/flurry/android/marketing/messaging/notification/FlurryMessage.html" title="class in com.flurry.android.marketing.messaging.notification"><span class="typeNameLink">FlurryMessage</span></a> - Class in <a href="com/flurry/android/marketing/messaging/notification/package-summary.html">com.flurry.android.marketing.messaging.notification</a></dt>
 <dd>&nbsp;</dd>
@@ -547,6 +563,10 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/flurry/android/marketing/FlurryMarketingOptions.html#getToken--">getToken()</a></span> - Method in class com.flurry.android.marketing.<a href="com/flurry/android/marketing/FlurryMarketingOptions.html" title="class in com.flurry.android.marketing">FlurryMarketingOptions</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/flurry/android/marketing/FlurryMarketingUtils.FirebaseTokenAgent.html#getToken--">getToken()</a></span> - Method in class com.flurry.android.marketing.<a href="com/flurry/android/marketing/FlurryMarketingUtils.FirebaseTokenAgent.html" title="class in com.flurry.android.marketing">FlurryMarketingUtils.FirebaseTokenAgent</a></dt>
+<dd>
+<div class="block">Get the Firebase token.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/flurry/android/marketing/messaging/notification/FlurryMessage.html#getTtl--">getTtl()</a></span> - Method in class com.flurry.android.marketing.messaging.notification.<a href="com/flurry/android/marketing/messaging/notification/FlurryMessage.html" title="class in com.flurry.android.marketing.messaging.notification">FlurryMessage</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/flurry/android/FlurryEvent.Param.html#GROUP_NAME">GROUP_NAME</a></span> - Static variable in class com.flurry.android.<a href="com/flurry/android/FlurryEvent.Param.html" title="class in com.flurry.android">FlurryEvent.Param</a></dt>
@@ -759,6 +779,10 @@
 <dd>
 <div class="block">Called after config data is activated.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/flurry/android/marketing/FlurryMarketingUtils.FirebaseTokenAgent.html#onComplete--">onComplete(&lt;any&gt;)</a></span> - Method in class com.flurry.android.marketing.<a href="com/flurry/android/marketing/FlurryMarketingUtils.FirebaseTokenAgent.html" title="class in com.flurry.android.marketing">FlurryMarketingUtils.FirebaseTokenAgent</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/flurry/android/marketing/FlurryMarketingUtils.FirebaseTokenAgent.TokenListener.html#onComplete-java.lang.String-">onComplete(String)</a></span> - Method in interface com.flurry.android.marketing.<a href="com/flurry/android/marketing/FlurryMarketingUtils.FirebaseTokenAgent.TokenListener.html" title="interface in com.flurry.android.marketing">FlurryMarketingUtils.FirebaseTokenAgent.TokenListener</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/flurry/android/FlurryAgent.html#onEndSession-android.content.Context-">onEndSession(Context)</a></span> - Static method in class com.flurry.android.<a href="com/flurry/android/FlurryAgent.html" title="class in com.flurry.android">FlurryAgent</a></dt>
 <dd>
 <div class="block">End a Flurry session for the given Context.</div>
@@ -991,6 +1015,10 @@
 <dd>
 <div class="block">Report to the Flurry Cold Start metrics that your app is now fully drawn.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/flurry/android/FlurryPerformance.html#reportLaunched--">reportLaunched()</a></span> - Static method in class com.flurry.android.<a href="com/flurry/android/FlurryPerformance.html" title="class in com.flurry.android">FlurryPerformance</a></dt>
+<dd>
+<div class="block">Report to the Flurry Cold Start metrics that your app is now launched.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/flurry/android/FlurryPrivacySession.Request.html#Request-android.content.Context-com.flurry.android.FlurryPrivacySession.Callback-">Request(Context, FlurryPrivacySession.Callback)</a></span> - Constructor for class com.flurry.android.<a href="com/flurry/android/FlurryPrivacySession.Request.html" title="class in com.flurry.android">FlurryPrivacySession.Request</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/flurry/android/FlurryConfig.html#resetState--">resetState()</a></span> - Method in class com.flurry.android.<a href="com/flurry/android/FlurryConfig.html" title="class in com.flurry.android">FlurryConfig</a></dt>
@@ -1150,6 +1178,10 @@
 </dd>
 <dt><span class="memberNameLink"><a href="com/flurry/android/marketing/messaging/notification/FlurryMessage.Builder.html#sound">sound</a></span> - Variable in class com.flurry.android.marketing.messaging.notification.<a href="com/flurry/android/marketing/messaging/notification/FlurryMessage.Builder.html" title="class in com.flurry.android.marketing.messaging.notification">FlurryMessage.Builder</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/flurry/android/marketing/FlurryMarketingUtils.FirebaseTokenAgent.html#start-com.flurry.android.marketing.FlurryMarketingUtils.FirebaseTokenAgent.TokenListener-">start(FlurryMarketingUtils.FirebaseTokenAgent.TokenListener)</a></span> - Method in class com.flurry.android.marketing.<a href="com/flurry/android/marketing/FlurryMarketingUtils.FirebaseTokenAgent.html" title="class in com.flurry.android.marketing">FlurryMarketingUtils.FirebaseTokenAgent</a></dt>
+<dd>
+<div class="block">Start getting Firebase token.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/flurry/android/FlurryEvent.Param.html#STEP_NUMBER">STEP_NUMBER</a></span> - Static variable in class com.flurry.android.<a href="com/flurry/android/FlurryEvent.Param.html" title="class in com.flurry.android">FlurryEvent.Param</a></dt>
 <dd>
 <div class="block">Step number.</div>
@@ -1373,7 +1405,7 @@ the order they are declared.</div>
 <li class="navBarCell1Rev">Index</li>
 <li><a href="help-doc.html">Help</a></li>
 </ul>
-<div class="aboutLanguage">Flurry Android SDK 13.2.0</div>
+<div class="aboutLanguage">Flurry Android SDK 13.3.0</div>
 </div>
 <div class="subNav">
 <ul class="navList">
