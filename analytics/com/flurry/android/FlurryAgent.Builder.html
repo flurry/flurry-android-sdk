@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":42,"i12":10,"i13":10,"i14":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":42,"i13":10,"i14":10,"i15":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -58,7 +58,7 @@ loadScripts(document, 'script');</script>
 <li><a href="../../../index-all.html">Index</a></li>
 <li><a href="../../../help-doc.html">Help</a></li>
 </ul>
-<div class="aboutLanguage">Flurry Android SDK 14.0.0</div>
+<div class="aboutLanguage">Flurry Android SDK 14.1.0</div>
 </div>
 <div class="subNav">
 <ul class="navList" id="allclasses_navbar_top">
@@ -216,47 +216,55 @@ extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/ja
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="FlurryAgent.Builder.html" title="class in com.flurry.android">FlurryAgent.Builder</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withGppConsent(java.lang.String,java.util.Set)">withGppConsent</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;gppString,
+              <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html?is-external=true" title="class or interface in java.lang" class="externalLink">Integer</a>&gt;&nbsp;gppSectionIds)</code></th>
+<td class="colLast">
+<div class="block">Set Flurry Consent for the IAB Global Privacy Platform (GPP).</div>
+</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code><a href="FlurryAgent.Builder.html" title="class in com.flurry.android">FlurryAgent.Builder</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withIncludeBackgroundSessionsInMetrics(boolean)">withIncludeBackgroundSessionsInMetrics</a></span>&#8203;(boolean&nbsp;includeBackgroundSessionsInMetrics)</code></th>
 <td class="colLast">
 <div class="block">True if this session should be added to total sessions/DAUs when applicationstate is inactive or background.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="FlurryAgent.Builder.html" title="class in com.flurry.android">FlurryAgent.Builder</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withListener(com.flurry.android.FlurryAgentListener)">withListener</a></span>&#8203;(<a href="FlurryAgentListener.html" title="interface in com.flurry.android">FlurryAgentListener</a>&nbsp;listener)</code></th>
 <td class="colLast">
 <div class="block">Sets the listener.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="FlurryAgent.Builder.html" title="class in com.flurry.android">FlurryAgent.Builder</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withLogEnabled(boolean)">withLogEnabled</a></span>&#8203;(boolean&nbsp;enableLog)</code></th>
 <td class="colLast">
 <div class="block">True to enable or  false to disable the internal logging for the Flurry SDK.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="FlurryAgent.Builder.html" title="class in com.flurry.android">FlurryAgent.Builder</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withLogLevel(int)">withLogLevel</a></span>&#8203;(int&nbsp;logLevel)</code></th>
 <td class="colLast">
 <div class="block">Set the log level of the internal Flurry SDK logging.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="FlurryAgent.Builder.html" title="class in com.flurry.android">FlurryAgent.Builder</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withModule(com.flurry.android.FlurryModule)">withModule</a></span>&#8203;(<a href="FlurryModule.html" title="interface in com.flurry.android">FlurryModule</a>&nbsp;module)</code></th>
 <td class="colLast">
 <div class="block">To register Flurry add-on modules, create each module and pass it in to this builder item</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="FlurryAgent.Builder.html" title="class in com.flurry.android">FlurryAgent.Builder</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withPerformanceMetrics(int)">withPerformanceMetrics</a></span>&#8203;(int&nbsp;performanceMetrics)</code></th>
 <td class="colLast">
 <div class="block">Set flags for performance metrics.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="FlurryAgent.Builder.html" title="class in com.flurry.android">FlurryAgent.Builder</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withPulseEnabled(boolean)">withPulseEnabled</a></span>&#8203;(boolean&nbsp;pulseEnabled)</code></th>
 <td class="colLast">
@@ -265,14 +273,14 @@ extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/ja
 </div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="FlurryAgent.Builder.html" title="class in com.flurry.android">FlurryAgent.Builder</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withReportLocation(boolean)">withReportLocation</a></span>&#8203;(boolean&nbsp;reportLocation)</code></th>
 <td class="colLast">
 <div class="block">True to enable or false to disable Location report.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code><a href="FlurryAgent.Builder.html" title="class in com.flurry.android">FlurryAgent.Builder</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withSessionForceStart(boolean)">withSessionForceStart</a></span>&#8203;(boolean&nbsp;isSessionForceStart)</code></th>
 <td class="colLast">
@@ -281,7 +289,7 @@ extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/ja
  Set to true if Flurry is initialized after Application onCreate() method.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code><a href="FlurryAgent.Builder.html" title="class in com.flurry.android">FlurryAgent.Builder</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withSslPinningEnabled(boolean)">withSslPinningEnabled</a></span>&#8203;(boolean&nbsp;sslPinningEnabled)</code></th>
 <td class="colLast">
@@ -530,6 +538,27 @@ public&nbsp;<a href="FlurryAgent.Builder.html" title="class in com.flurry.androi
 </dl>
 </li>
 </ul>
+<a id="withGppConsent(java.lang.String,java.util.Set)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>withGppConsent</h4>
+<pre class="methodSignature">public&nbsp;<a href="FlurryAgent.Builder.html" title="class in com.flurry.android">FlurryAgent.Builder</a>&nbsp;withGppConsent&#8203;(@NonNull
+                                          <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;gppString,
+                                          @NonNull
+                                          <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html?is-external=true" title="class or interface in java.lang" class="externalLink">Integer</a>&gt;&nbsp;gppSectionIds)</pre>
+<div class="block">Set Flurry Consent for the IAB Global Privacy Platform (GPP). To pass an IAB string to Flurry,
+ see <a href="Consent.html" title="class in com.flurry.android"><code>Consent</code></a> and <a href="FlurryConsent.html" title="class in com.flurry.android"><code>FlurryConsent</code></a></div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>gppString</code> - IAB GPP String.</dd>
+<dd><code>gppSectionIds</code> - Integer set of IAB GPP section ids that are applicable for this bid request.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>The Builder instance</dd>
+</dl>
+</li>
+</ul>
 <a id="withConsent(com.flurry.android.Consent)">
 <!--   -->
 </a>
@@ -621,7 +650,7 @@ public&nbsp;<a href="FlurryAgent.Builder.html" title="class in com.flurry.androi
 <li><a href="../../../index-all.html">Index</a></li>
 <li><a href="../../../help-doc.html">Help</a></li>
 </ul>
-<div class="aboutLanguage">Flurry Android SDK 14.0.0</div>
+<div class="aboutLanguage">Flurry Android SDK 14.1.0</div>
 </div>
 <div class="subNav">
 <ul class="navList" id="allclasses_navbar_bottom">
@@ -662,7 +691,7 @@ public&nbsp;<a href="FlurryAgent.Builder.html" title="class in com.flurry.androi
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
 </nav>
-<p class="legalCopy"><small>Copyright &copy; 2009-2022, Flurry, Inc. All Rights Reserved. <a href="https://developer.yahoo.com/flurry/docs/" target="_blank">Flurry Publisher Support Site</a>.</small></p>
+<p class="legalCopy"><small>Copyright &copy; 2009-2023, Flurry, Inc. All Rights Reserved. <a href="https://developer.yahoo.com/flurry/docs/" target="_blank">Flurry Publisher Support Site</a>.</small></p>
 </footer>
 </body>
 </html>
