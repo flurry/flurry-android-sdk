@@ -59,7 +59,7 @@ loadScripts(document, 'script');</script>
 <li><a href="../../../index-all.html">Index</a></li>
 <li><a href="../../../help-doc.html">Help</a></li>
 </ul>
-<div class="aboutLanguage">Flurry Android SDK 14.3.1</div>
+<div class="aboutLanguage">Flurry Android SDK 14.4.0</div>
 </div>
 <div class="subNav">
 <ul class="navList" id="allclasses_navbar_top">
@@ -400,9 +400,9 @@ extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/ja
 </td>
 </tr>
 <tr id="i24" class="altColor">
-<td class="colFirst"><code>static void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#logPayment(int,android.content.Intent,java.util.Map)">logPayment</a></span>&#8203;(int&nbsp;resultCode,
-          android.content.Intent&nbsp;data,
+<td class="colFirst"><code>static <a href="FlurryEventRecordStatus.html" title="enum in com.flurry.android">FlurryEventRecordStatus</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#logPayment(int,java.util.List,java.util.Map)">logPayment</a></span>&#8203;(int&nbsp;responseCode,
+          <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&gt;&nbsp;purchases,
           <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>,&#8203;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;&nbsp;parameters)</code></th>
 <td class="colLast">
 <div class="block">Log a payment from Google.</div>
@@ -1326,24 +1326,32 @@ public static&nbsp;<a href="FlurryEventRecordStatus.html" title="enum in com.flu
 </dl>
 </li>
 </ul>
-<a id="logPayment(int,android.content.Intent,java.util.Map)">
+<a id="logPayment(int,java.util.List,java.util.Map)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>logPayment</h4>
-<pre class="methodSignature">public static&nbsp;void&nbsp;logPayment&#8203;(int&nbsp;resultCode,
-                              android.content.Intent&nbsp;data,
-                              @Nullable
-                              <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>,&#8203;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;&nbsp;parameters)</pre>
-<div class="block">Log a payment from Google. This method is supposed to be called when you get an activity
- result back from a Google Play Purchase in your Activity.onActivityResult()</div>
+<pre class="methodSignature">public static&nbsp;<a href="FlurryEventRecordStatus.html" title="enum in com.flurry.android">FlurryEventRecordStatus</a>&nbsp;logPayment&#8203;(int&nbsp;responseCode,
+                                                 @Nullable
+                                                 <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&gt;&nbsp;purchases,
+                                                 @Nullable
+                                                 <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>,&#8203;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;&nbsp;parameters)</pre>
+<div class="block">Log a payment from Google. This method is suppose to be called from PurchasesUpdatedListener
+ callback of BillingClient.
+
+ <pre><code>
+ Example:
+     public class BillingClientLifecycle implements PurchasesUpdatedListener {
+</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>resultCode</code> - The resultCode given in the call to onActivityResult() from Google Play.</dd>
-<dd><code>data</code> - The Intent given in the call to onActivityResult() from Google Play.</dd>
+<dd><code>responseCode</code> - The <code>BillingResult</code>.getResponseCode received in PurchasesUpdatedListener callback.</dd>
+<dd><code>purchases</code> - List of <code>Purchase</code> objects by user from google play received in PurchasesUpdatedListener callback.</dd>
 <dd><code>parameters</code> - A <code>Map&lt;String, String&gt;</code> of the parameters which should be submitted
-                   with this event.</dd>
+                     with this event.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>FlurryEventRecordStatus.</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="#logEvent(java.lang.String,java.util.Map)"><code>logEvent(String, Map)</code></a></dd>
 </dl>
@@ -1778,7 +1786,7 @@ public static&nbsp;<a href="FlurryEventRecordStatus.html" title="enum in com.flu
 <li><a href="../../../index-all.html">Index</a></li>
 <li><a href="../../../help-doc.html">Help</a></li>
 </ul>
-<div class="aboutLanguage">Flurry Android SDK 14.3.1</div>
+<div class="aboutLanguage">Flurry Android SDK 14.4.0</div>
 </div>
 <div class="subNav">
 <ul class="navList" id="allclasses_navbar_bottom">
